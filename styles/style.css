@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Open+Sans|Oswald|Quicksand|Righteous|Roboto+Condensed|Shadows+Into+Light|Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../image/background-image.jpeg) ;
+    background-position: center center;
+    background-attachment: fixed;
+
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+
+
+
+}
+
+
+header{
+      position: relative;  
+
+    text-align: center;
+    padding: 1.5%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.349);
+    
+    background: #DF7100;
+    color: white;
+
+    font-size: 36px;
+
+    font-family: 'Shadows Into Light Two', cursive
+
+}
+
+.image-wrapper{ 
+    background: rgba(26, 14, 1, 0.28);
+    padding-bottom:  1.7em;
+    /* height: 87vh; */
+}
+
+
+
+.controls{
+    text-align: center;
+    color: white;
+   
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.controls p {
+    line-height: 1.5em;
+}
+
+
+.controls p:first-child {
+    margin-bottom: 1.2em;
+}
+
+
+
+button, .button{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 11%;
+   
+    padding: 1.5% 10%;
+
+    background: #DF7100;
+    border: solid 2px;
+    border-radius: 5%;
+    color: white;
+    font-size: 0.7em;
+    box-shadow: 0px 4px 10px rgba(146, 146, 146, 0.32);
+    font-family: 'Fira Sans', sans-serif;
+    /* font-family: system-ui; */
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    border-color: rgba(109, 109, 109, 0.26);
+    transition: 
+        background-color 1s ease 1ms,
+        color 1s ease ,
+        box-shadow  1s ease ;
+
+    
+;
+}
+
+button:hover, .button:hover{
+    background: rgb(247, 124, 1);
+    box-shadow: 0px 4px 4px rgba(109, 109, 109, 0.32);
+    border-color: rgba(109, 109, 109, 0.089);
+    color: rgb(241, 240, 240);
+}
+
+
+footer{
+    background: white;
+    position: relative; 
+    text-align: center;
+
+}   
+
+.footer-background-wrapper{
+    background: rgba(37, 20, 2, 0.01);
+}
+
+  footer h1{ 
+  color: black;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  color: #B25A00;
+
+
+}  
+
+footer p {
+    font-family: 'Fira Sans', sans-serif;
+
+    font-size: 1.2em;
+    
+   
+}
+
+.footer-header{
+    padding: 3.2em 0;
+}
+
+
+
+
+.footer-grid{
+    display: block;
+} 
+
+.footer-grid div{
+    padding: 4em;
+
+}
+
+.phone{
+    background: rgb(195, 99, 2);
+   
+}
+
+.phone h1{
+     color: white;
+     font-size: 2em;
+
+}
+
+
+/* Media query for Phones*/
+@media only screen and (max-width: 768px){
+
+    
+body{
+  
+    background-size: contain;  
+   
+}
+
+    footer p {
+       
+        font-size: 1.2em;
+        padding: 10%;
+
+    }
+
+
+    .controls{
+        text-align: center;
+
+        padding-top:  7%;
+        
+
+        font-size: 2em;
+    
+       
+    }
+
+    body{
+          background-size: cover;  
+       
+    
+    
+    }
+}
+
+/* Media query for Laptops*/
+@media only screen and (min-width: 1024px){
+
+    .footer-grid{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        width: 100%;
+
+    } 
+
+
+    footer p {
+        padding: 1em 1.3em ;
+        font-size: 1.2em;
+        width: 60%;
+        margin-left: 17%;
+        text-align: left;
+
+
+    }
+
+
+    .controls{
+        text-align: center;
+        margin-left: 20%;
+        padding-top:  8.5%;
+        width: 60%; 
+        height: 80vh; 
+
+        font-size: 2em;
+        color: white;
+    
+
+    }
+}
